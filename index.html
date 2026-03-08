@@ -534,14 +534,23 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
   subdomains:'abcd',attribution:'© CartoDB © OSM',maxZoom:19
 }).addTo(map1);
 
+// ══════════════════════════════════════════════════
+//  DAILY MAP UPDATE CHECKLIST — MAP 1 (Strike Targets)
+//  Each day, review:
+//  1. Update 'day' field for any target showing ongoing activity
+//     e.g. 'Day 1–8 (ongoing)' → 'Day 1–9 (ongoing)'
+//  2. Update 'munitions' and 'damage' text with cumulative new figures
+//  3. Add a new ST entry (with comment '// ── Day N new target ──') if
+//     Iran strikes a location not yet on the map
+// ══════════════════════════════════════════════════
 const ST=[
   // Israeli territory
   {lat:32.085,lng:34.781,t:'i',
    name:'Tel Aviv / Gush Dan Metro Area',
-   day:'Day 1–7 (ongoing)',
-   munitions:'~120 ballistic missiles + ~800 Shahed drones directed at greater metro area',
+   day:'Day 1–9 (ongoing)',
+   munitions:'~123 ballistic missiles + ~824 Shahed drones across 9 days (declining salvo size)',
    interception:'~88% intercepted by Iron Dome, Arrow 2/3, David\'s Sling',
-   damage:'Damage confirmed in Holon, Bat Yam, Rishon LeZion. Iron Dome batteries operating near capacity on Day 1.',
+   damage:'Damage confirmed in Holon, Bat Yam, Rishon LeZion. Iron Dome near capacity on Day 1. Reduced but persistent salvos continue through Day 9.',
    system:'Iron Dome · Arrow 2/3 · David\'s Sling · THAAD'},
   {lat:32.794,lng:34.990,t:'i',
    name:'Haifa — Port &amp; Industrial Zone',
@@ -589,10 +598,10 @@ const ST=[
    system:'Patriot PAC-3'},
   {lat:26.221,lng:50.592,t:'u',
    name:'NSA Bahrain — 5th Fleet HQ',
-   day:'Day 3–6',
-   munitions:'~30 missiles + ~80 drones, including one large swarm on Day 6',
-   interception:'~78% intercepted — some drones breached perimeter',
-   damage:'3 drones impacted naval perimeter on Day 6. Minor structural damage. Fleet dispersed to open water.',
+   day:'Day 3–9 (ongoing)',
+   munitions:'~30 missiles + ~100+ drones across multiple salvos, including large swarm on Day 6',
+   interception:'~78% intercepted — some drones breached perimeter on Day 6',
+   damage:'3 drones impacted naval perimeter on Day 6. Minor structural damage. Fleet dispersed to open water. Continued small drone probing attacks through Day 9.',
    system:'Patriot · CIWS · Phalanx'},
   {lat:33.787,lng:42.441,t:'u',
    name:'Ain al-Asad Air Base, Iraq',
@@ -645,6 +654,14 @@ const ST=[
    interception:'~65% intercepted — limited US air defence footprint near Green Zone',
    damage:'3 drone impacts near US Embassy compound. Iraqi civilian casualties in surrounding areas.',
    system:'C-RAM · limited Patriot'},
+  // ── Day 8 new target ──
+  {lat:25.253,lng:55.364,t:'d',
+   name:'Dubai International Airport',
+   day:'Day 8',
+   munitions:'1 Shahed drone (confirmed terminal impact); 2nd drone struck Dubai Marina residential tower',
+   interception:'Drone NOT fully intercepted — slipped through in urban low-altitude approach corridor',
+   damage:'Impact on airport terminal area. Emirates suspended all departures for 90 minutes. One civilian killed by interceptor shrapnel falling onto Deira. Dubai Marina tower façade damaged by second drone.',
+   system:'UAE THAAD · Patriot (activated after breach)'},
 ];
 
 const TC={i:'#c0392b',u:'#e67e22',d:'#f1c40f'};
@@ -670,6 +687,17 @@ L.circleMarker([32.428,53.688],{radius:14,fillColor:'#27ae60',color:'#fff',weigh
 
 // ══════════════════════════════════════════════════
 //  MAP 2 — IRANIAN FACILITIES (lazy)
+// ══════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
+//  DAILY MAP UPDATE CHECKLIST — MAP 2 (Facility Status)
+//  Each day, review:
+//  1. Update 'status', 'detail', and 'strategic' text for any facility
+//     newly struck or with escalated damage
+//  2. Change 's' field if damage level increases:
+//     'operational' → 'damaged' → 'destroyed'
+//  3. Add a new FAC entry (with comment '// ── Day N new strike ──') for
+//     any newly struck Iranian site not yet on the map
+//  Key facility types (t): 'nuclear' | 'mil' (military/industrial/energy)
 // ══════════════════════════════════════════════════
 let map2=null;
 const FAC=[
@@ -734,9 +762,17 @@ const FAC=[
    detail:'Main IRGC Navy and IRIN headquarters. Deliberately excluded from target list. Striking Bandar Abbas would likely trigger immediate Hormuz closure, halting ~22% of global oil trade.',
    strategic:'Strategic restraint — preserving global oil flows. IRGC naval forces still active.'},
   {lat:29.256,lng:50.323,s:'damaged',t:'mil',icon:'🛢️',name:'Kharg Island — Main Oil Export Terminal',
-   status:'PARTIALLY DAMAGED',
-   detail:'Handles ~90% of Iran\'s oil exports. Deliberately partially targeted — full destruction would crater global energy markets and draw broader international condemnation. Loading infrastructure partially damaged.',
-   strategic:'Partial pressure on Iranian oil revenues without triggering global oil crisis.'},
+   status:'HEAVILY DAMAGED — Day 9 escalation',
+   detail:'Handles ~90% of Iran\'s oil exports. Initially held off target list to avoid global energy shock. Day 9 saw the first deliberate, large-scale strikes on oil infrastructure: loading platforms, storage tanks (est. 4M barrel capacity), and pipeline manifolds hit. Shipping berthing areas damaged. Output severely curtailed.',
+   strategic:'Directly attacks Iran\'s primary revenue source (~$50B/yr in oil exports). Brent crude at ~$93/bbl. Risk of global supply shock if strikes continue; Saudi/UAE pledged compensatory output increase.'},
+  {lat:30.354,lng:48.284,s:'damaged',t:'mil',icon:'🛢️',name:'Abadan Refinery — Iran\'s Largest Crude Oil Refinery',
+   status:'DAMAGED — Day 9 strikes',
+   detail:'Iran\'s largest and oldest refinery, with ~300,000 bbl/day processing capacity. Struck on Day 9 as part of coordinated oil infrastructure campaign — the first time domestic refinery assets were deliberately targeted. Crude distillation units and storage tanks hit. Refinery output halted.',
+   strategic:'Reduces Iran\'s domestic fuel production and petrol supply. Fuel rationing risk for Iranian population. Signals willingness to escalate economic pressure on energy sector.'},
+  {lat:30.444,lng:49.074,s:'damaged',t:'mil',icon:'🛢️',name:'Bandar Imam Khomeini — Oil Storage &amp; Export Hub',
+   status:'DAMAGED — Day 9 strikes',
+   detail:'Major petrochemical complex and crude oil storage depot on the northern Persian Gulf coast. Struck on Day 9 alongside Kharg Island and Abadan as part of coordinated strikes on oil export infrastructure. Onshore storage depots and loading manifolds damaged. Linked pipeline from Ahvaz fields affected.',
+   strategic:'Compounds pressure on Iranian oil export capacity. Combined with Kharg and Abadan strikes, significantly disrupts Iran\'s ability to monetise remaining crude production.'},
 ];
 
 function initMap2(){
