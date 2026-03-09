@@ -1039,8 +1039,8 @@ const BASE_LDEST=300; // baseline launchers destroyed at Day-7
 // ══════════════════════════════════════════════════
 //  REFRESH
 // ══════════════════════════════════════════════════
-function upBar3(barId,avId,apId,arId,fired,base){
-  const destr=Math.round(base*DES_PCT[barId]);
+function upBar3(barId,avId,apId,arId,fired,base,desKey){
+  const destr=Math.round(base*DES_PCT[desKey]);
   const rem=Math.max(0,base-fired-destr);
   const rPct=(rem/base*100),dPct=(destr/base*100),fPct=(fired/base*100);
   const row=document.getElementById('bar'+barId);
@@ -1069,10 +1069,10 @@ function doRefresh(){
 
   // ── Arsenal 3-segment bars ──
   const mL=Math.round(m*SP.long),mM=Math.round(m*SP.med),mS=Math.round(m*SP.short);
-  upBar3('0','av0','ap0','ar0',mL,BASE.long);
-  upBar3('1','av1','ap1','ar1',mM,BASE.med);
-  upBar3('2','av2','ap2','ar2',mS,BASE.short);
-  upBar3('3','av3','ap3','ar3',d,BASE.drone);
+  upBar3('0','av0','ap0','ar0',mL,BASE.long,'long');
+  upBar3('1','av1','ap1','ar1',mM,BASE.med,'med');
+  upBar3('2','av2','ap2','ar2',mS,BASE.short,'short');
+  upBar3('3','av3','ap3','ar3',d,BASE.drone,'drone');
 
   // ── Doughnut chart ──
   ch2.data.datasets[0].data=[mL,mM,mS,d,25];ch2.update();
