@@ -193,7 +193,7 @@
 <header>
   <div>
     <h1>🇮🇷 Iran Arsenal &amp; Conflict Dashboard</h1>
-    <p>Op. True Promise IV — Iranian Response to US-Israeli Strikes (Op. Epic Fury / Op. Roaring Lion) &nbsp;|&nbsp; Day 11 &nbsp;|&nbsp; March 10, 2026</p>
+    <p>Op. True Promise IV — Iranian Response to US-Israeli Strikes (Op. Epic Fury / Op. Roaring Lion) &nbsp;|&nbsp; Day 12 &nbsp;|&nbsp; March 11, 2026</p>
   </div>
   <div class="badge"><div class="dot"></div><span>LIVE CONFLICT</span></div>
 </header>
@@ -201,10 +201,10 @@
 <details id="upanel">
   <summary>⟳ &nbsp;Live Update — Edit Cumulative Figures &amp; Refresh</summary>
   <div class="pgrid">
-    <div class="pf"><label>Missiles Fired (total)</label><input id="im" type="number" value="570"></div>
-    <div class="pf"><label>Drones Launched (total)</label><input id="id" type="number" value="2344"></div>
-    <div class="pf"><label>Days Active</label><input id="idy" type="number" value="11"></div>
-    <div class="pf"><label>Launchers Destroyed</label><input id="il" type="number" value="318"></div>
+    <div class="pf"><label>Missiles Fired (total)</label><input id="im" type="number" value="584"></div>
+    <div class="pf"><label>Drones Launched (total)</label><input id="id" type="number" value="2384"></div>
+    <div class="pf"><label>Days Active</label><input id="idy" type="number" value="12"></div>
+    <div class="pf"><label>Launchers Destroyed</label><input id="il" type="number" value="323"></div>
     <div class="pf"><label>Targets Struck</label><input id="it" type="number" value="15"></div>
     <button id="btn-upd" onclick="doRefresh()">↻ Update</button>
   </div>
@@ -215,10 +215,10 @@
 
 <!-- KPI -->
 <div class="krow">
-  <div class="kpi r"><div class="klbl">Missiles Fired (Est.)</div><div class="kval" id="kvm">570</div><div class="ksub">of ~9,000 total missile-class stockpile</div></div>
-  <div class="kpi o"><div class="klbl">Drones Launched (Est.)</div><div class="kval" id="kvd">2,344</div><div class="ksub" id="kvds">of ~80,000 stockpile · 2.9% expended</div></div>
+  <div class="kpi r"><div class="klbl">Missiles Fired (Est.)</div><div class="kval" id="kvm">584</div><div class="ksub">of ~9,000 total missile-class stockpile</div></div>
+  <div class="kpi o"><div class="klbl">Drones Launched (Est.)</div><div class="kval" id="kvd">2,384</div><div class="ksub" id="kvds">of ~80,000 stockpile · 3.0% expended</div></div>
   <div class="kpi y"><div class="klbl">Targets Struck</div><div class="kval" id="kvt">15+</div><div class="ksub">across 9 countries / territories</div></div>
-  <div class="kpi b"><div class="klbl">Days Active</div><div class="kval" id="kvdy">11</div><div class="ksub" id="kvdys">since Feb 28 · ~318 launchers destroyed</div></div>
+  <div class="kpi b"><div class="klbl">Days Active</div><div class="kval" id="kvdy">12</div><div class="ksub" id="kvdys">since Feb 28 · ~323 launchers destroyed</div></div>
 </div>
 
 <!-- MAP + ARSENAL -->
@@ -417,14 +417,14 @@
     <div style="margin-top:7px;font-size:.62rem;color:var(--muted)">CENTCOM confirmed ~500 missiles + ~2,000 drones by Day 4. Missiles ↓~90% · Drones ↓~83% from Day-1 peak. Drones plotted on right axis (purple line).</div>
   </div>
   <div class="card">
-    <div class="ctitle">Total Launch Split — All 11 Days</div>
+    <div class="ctitle">Total Launch Split — All 12 Days</div>
     <div style="max-width:200px;margin:0 auto 8px"><canvas id="sc"></canvas></div>
-    <div class="sr"><span class="sl">Long-Range Ballistic</span><span style="color:#e74c3c;font-weight:600">170 &nbsp;(5.8%)</span></div>
-    <div class="sr"><span class="sl">Medium-Range Ballistic</span><span style="color:#f39c12;font-weight:600">257 &nbsp;(8.8%)</span></div>
-    <div class="sr"><span class="sl">Short-Range Missiles</span><span style="color:#f1c40f;font-weight:600">139 &nbsp;(4.7%)</span></div>
-    <div class="sr"><span class="sl">Drones (Shahed)</span><span style="color:#9b59b6;font-weight:600">2,344 &nbsp;(79.9%)</span></div>
-    <div class="sr"><span class="sl">Cruise Missiles</span><span style="color:#1abc9c;font-weight:600">25 &nbsp;(0.9%)</span></div>
-    <div class="sr"><span class="sl" style="font-weight:700;color:var(--txt)">TOTAL LAUNCHED</span><span style="font-weight:700;color:#fff">2,935</span></div>
+    <div class="sr"><span class="sl">Long-Range Ballistic</span><span style="color:#e74c3c;font-weight:600">175 &nbsp;(5.9%)</span></div>
+    <div class="sr"><span class="sl">Medium-Range Ballistic</span><span style="color:#f39c12;font-weight:600">264 &nbsp;(8.8%)</span></div>
+    <div class="sr"><span class="sl">Short-Range Missiles</span><span style="color:#f1c40f;font-weight:600">141 &nbsp;(4.7%)</span></div>
+    <div class="sr"><span class="sl">Drones (Shahed)</span><span style="color:#9b59b6;font-weight:600">2,384 &nbsp;(79.8%)</span></div>
+    <div class="sr"><span class="sl">Cruise Missiles</span><span style="color:#1abc9c;font-weight:600">25 &nbsp;(0.8%)</span></div>
+    <div class="sr"><span class="sl" style="font-weight:700;color:var(--txt)">TOTAL LAUNCHED</span><span style="font-weight:700;color:#fff">2,989</span></div>
     <div style="margin-top:8px;padding:7px 9px;background:#0b0d12;border-radius:5px;border:1px solid var(--border);font-size:.66rem;color:var(--muted)">📍 ~40% → <strong style="color:var(--red)">Israel</strong> &nbsp;·&nbsp; ~60% → <strong style="color:var(--orange)">US Gulf-region bases</strong></div>
   </div>
   <div class="card">
@@ -458,25 +458,25 @@
     <tbody>
       <tr>
         <td><strong>Long-Range Ballistic</strong><br><span style="font-size:.62rem;color:var(--muted)">&gt;1,500 km · Khorramshahr, Ghadr-110</span></td>
-        <td>170</td><td>150</td><td><span class="ev-badge">20</span></td>
+        <td>175</td><td>154</td><td><span class="ev-badge">21</span></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:88.0%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">88.0%</span></div></td>
         <td><span class="sys-badge">Arrow 3</span><span class="sys-badge">THAAD</span></td>
       </tr>
       <tr>
         <td><strong>Medium-Range Ballistic</strong><br><span style="font-size:.62rem;color:var(--muted)">700–1,500 km · Emad, Haj Qassem</span></td>
-        <td>257</td><td>216</td><td><span class="ev-badge">41</span></td>
-        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:84.0%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">84.0%</span></div></td>
+        <td>264</td><td>222</td><td><span class="ev-badge">42</span></td>
+        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:84.1%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">84.1%</span></div></td>
         <td><span class="sys-badge">Arrow 2</span><span class="sys-badge">David's Sling</span></td>
       </tr>
       <tr>
         <td><strong>Short-Range Missiles</strong><br><span style="font-size:.62rem;color:var(--muted)">&lt;700 km · Zolfagar, Fateh-110</span></td>
-        <td>139</td><td>107</td><td><span class="ev-badge">32</span></td>
-        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:77.0%;background:linear-gradient(90deg,#e67e22,#f39c12)"></div></div><span class="rate-num" style="color:var(--orange)">77.0%</span></div></td>
+        <td>141</td><td>109</td><td><span class="ev-badge">32</span></td>
+        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:77.3%;background:linear-gradient(90deg,#e67e22,#f39c12)"></div></div><span class="rate-num" style="color:var(--orange)">77.3%</span></div></td>
         <td><span class="sys-badge">Iron Dome</span><span class="sys-badge">David's Sling</span></td>
       </tr>
       <tr>
         <td><strong>Shahed Drones</strong><br><span style="font-size:.62rem;color:var(--muted)">Subsonic OWA · ~$20k/unit</span></td>
-        <td>2,344</td><td>1,934</td><td><span class="ev-badge">410</span></td>
+        <td>2,384</td><td>1,967</td><td><span class="ev-badge">417</span></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:82.5%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">82.5%</span></div></td>
         <td><span class="sys-badge">Iron Dome</span><span class="sys-badge">F-35 / jets</span><span class="sys-badge">THAAD</span></td>
       </tr>
@@ -487,15 +487,15 @@
         <td><span class="sys-badge">Patriot</span><span class="sys-badge">Arrow 2</span></td>
       </tr>
       <tr style="background:rgba(255,255,255,.018)">
-        <td><strong style="color:var(--txt)">TOTAL</strong></td><td><strong>2,935</strong></td><td><strong>2,429</strong></td>
-        <td><strong><span class="ev-badge">506</span></strong></td>
+        <td><strong style="color:var(--txt)">TOTAL</strong></td><td><strong>2,989</strong></td><td><strong>2,474</strong></td>
+        <td><strong><span class="ev-badge">515</span></strong></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:82.8%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71;font-size:.78rem"><strong>82.8%</strong></span></div></td>
         <td><span style="font-size:.63rem;color:var(--muted)">Multi-layer · All systems</span></td>
       </tr>
     </tbody>
   </table>
   <div class="ib" style="margin-top:10px">
-    <p>Of ~506 projectiles that evaded interception, not all caused significant damage — many missed targets, malfunctioned, or were downed by EW/SHORAD systems not tracked here. Confirmed damage assessments remain incomplete and classified. Interception rates reflect IDF/CENTCOM claims — these are optimistic and should be treated as upper bounds.</p>
+    <p>Of ~515 projectiles that evaded interception, not all caused significant damage — many missed targets, malfunctioned, or were downed by EW/SHORAD systems not tracked here. Confirmed damage assessments remain incomplete and classified. Interception rates reflect IDF/CENTCOM claims — these are optimistic and should be treated as upper bounds.</p>
   </div>
 </div>
 
@@ -514,7 +514,7 @@
   Defence Security Asia · Critical Threats/AEI · CBC News · Carnegie Endowment · CFR · Wikipedia 2026 Iran War ·
   Tasnim News · CSIS · Lloyd's of London · House of Commons Library · NATO · Reuters · AP<br>
   <strong>⚠ DISCLAIMER:</strong> EST = intel estimates with significant uncertainty. CONF = confirmed official statements.
-  Intercept rates and stockpile figures carry classification-level uncertainty. All figures rounded. Compiled March 10, 2026.
+  Intercept rates and stockpile figures carry classification-level uncertainty. All figures rounded. Compiled March 11, 2026.
 </div>
 
 <script>
@@ -547,10 +547,10 @@ const ST=[
   // Israeli territory
   {lat:32.085,lng:34.781,t:'i',
    name:'Tel Aviv / Gush Dan Metro Area',
-   day:'Day 1–11 (ongoing)',
-   munitions:'~127 ballistic missiles + ~894 Shahed drones across 11 days (declining salvo size)',
-   interception:'~88% intercepted by Iron Dome, Arrow 2/3, David\'s Sling',
-   damage:'Damage confirmed in Holon, Bat Yam, Rishon LeZion. Iron Dome near capacity on Day 1. Reduced but persistent salvos continue through Day 11.',
+   day:'Day 1–12 (ongoing)',
+   munitions:'~132 ballistic missiles + ~934 Shahed drones across 12 days; Day 12 includes Khoramshahr-4 IRBM strikes',
+   interception:'~88% intercepted by Iron Dome, Arrow 2/3 (incl. Arrow-3 exo-atm. Day 12), David\'s Sling',
+   damage:'Damage confirmed in Holon, Bat Yam, Rishon LeZion. Day 12: Khoramshahr barrages; Arrow-3 deployed for first time this conflict for exo-atmospheric intercept of inbound IRBMs.',
    system:'Iron Dome · Arrow 2/3 · David\'s Sling · THAAD'},
   {lat:32.794,lng:34.990,t:'i',
    name:'Haifa — Port &amp; Industrial Zone',
@@ -598,10 +598,10 @@ const ST=[
    system:'Patriot PAC-3'},
   {lat:26.221,lng:50.592,t:'u',
    name:'NSA Bahrain — 5th Fleet HQ',
-   day:'Day 3–11 (ongoing)',
-   munitions:'~30 missiles + ~100+ drones across multiple salvos, including large swarm on Day 6',
+   day:'Day 3–12 (ongoing)',
+   munitions:'~30 missiles + ~100+ drones across multiple salvos; Day 12 included in 37th wave Khoramshahr salvo',
    interception:'~78% intercepted — some drones breached perimeter on Day 6',
-   damage:'3 drones impacted naval perimeter on Day 6. Minor structural damage. Fleet dispersed to open water. Continued small drone probing attacks through Day 11. Day 11: desalination facility adjacent to base struck.',
+   damage:'3 drones impacted naval perimeter on Day 6. Minor structural damage. Fleet dispersed to open water. Day 11: adjacent desalination facility struck. Day 12: targeted again as part of 3-hour Khoramshahr barrage.',
    system:'Patriot · CIWS · Phalanx'},
   {lat:33.787,lng:42.441,t:'u',
    name:'Ain al-Asad Air Base, Iraq',
@@ -612,10 +612,10 @@ const ST=[
    system:'Patriot · C-RAM'},
   {lat:36.190,lng:44.009,t:'u',
    name:'Erbil — US Consulate &amp; Military Forces',
-   day:'Day 3',
-   munitions:'~12 missiles targeting consulate compound and co-located US forces',
+   day:'Day 3, 12',
+   munitions:'Day 3: ~12 missiles; Day 12: included in 37th wave as Khoramshahr IRBM targets Erbil US base',
    interception:'~67% intercepted — limited defences in Erbil',
-   damage:'Partial collapse of Consulate General annex building. US military casualties not confirmed publicly.',
+   damage:'Day 3: Partial collapse of Consulate General annex building. Day 12: targeted again in multi-front IRBM barrage; damage assessment ongoing.',
    system:'Patriot (limited)'},
   {lat:31.826,lng:36.789,t:'u',
    name:'Azraq Air Base (H4), Jordan',
@@ -635,10 +635,10 @@ const ST=[
    system:'n/a — not intercepted'},
   {lat:24.418,lng:54.476,t:'d',
    name:'Abu Dhabi — US Embassy &amp; ADNOC HQ area',
-   day:'Day 3–4, 11',
-   munitions:'~8 Shahed drones (Days 3–4); Day 11 major barrage: 9 ballistic missiles + 35 Shahed drones targeting UAE broadly',
-   interception:'~75–80% intercepted by UAE THAAD / Patriot batteries',
-   damage:'Days 3–4: 2 drone impacts near Abu Dhabi Corniche area; 3 civilians injured. Day 11: escalated barrage — most intercepted but confirmed ground impacts in UAE territory.',
+   day:'Day 3–4, 11–12',
+   munitions:'~8 Shahed drones (Days 3–4); Days 11–12: sustained barrage with ballistic missiles + Shahed drones; Day 12 Ruwais refinery hit',
+   interception:'~75–80% intercepted by UAE THAAD / Patriot; Day 12: UAE says 26 drones intercepted, 9 fell inside UAE',
+   damage:'Days 3–4: 2 drone impacts near Corniche, 3 civilians injured. Day 11–12: escalating barrage. Day 12: Ruwais Industrial Complex (world\'s 4th-largest refinery, 922k bpd) hit — fire, full shutdown.',
    system:'UAE THAAD · Patriot'},
   {lat:24.242,lng:54.547,t:'u',
    name:'Al Dhafra Air Base, Abu Dhabi, UAE',
@@ -654,6 +654,21 @@ const ST=[
    interception:'~65% intercepted — limited US air defence footprint near Green Zone',
    damage:'3 drone impacts near US Embassy compound. Iraqi civilian casualties in surrounding areas.',
    system:'C-RAM · limited Patriot'},
+  // ── Day 12 new targets ──
+  {lat:23.982,lng:53.643,t:'d',
+   name:'Ruwais Industrial Complex — Abu Dhabi, UAE',
+   day:'Day 12',
+   munitions:'Multiple Shahed drones in coordinated strike on the world\'s 4th-largest oil refinery',
+   interception:'Most drones in the UAE barrage intercepted; sufficient drones breached to start fire',
+   damage:'Fire ignited at refinery complex. ADNOC halts full operations as precaution. 922,000 bpd offline — ~1% of global refining capacity. Jet fuel prices at record high.',
+   system:'UAE THAAD · Patriot'},
+  {lat:31.778,lng:35.236,t:'i',
+   name:'West Jerusalem',
+   day:'Day 12',
+   munitions:'Khoramshahr-4 IRBM as part of 37th wave 3-hour multi-front barrage',
+   interception:'Arrow-3 deployed for first time this conflict for exo-atmospheric intercept; partial intercept success',
+   damage:'Damage assessment ongoing. Significant alarm and civilian casualties reported.',
+   system:'Arrow-3 (first use) · Arrow-2 · Iron Dome'},
   // ── Day 10 new target ──
   {lat:26.082,lng:50.549,t:'d',
    name:'Al-Dur Desalination Plant — Bahrain',
@@ -762,9 +777,9 @@ const FAC=[
    detail:'Major IRIAF base in northwest. Runway cratered (2 sections unusable), 8 aircraft destroyed on ground, fuel storage destroyed. Runways reportedly being repaired.',
    strategic:'Reduces IRIAF ability to threaten Turkey/Iraq approaches. Some aircraft dispersed to highways.'},
   {lat:35.689,lng:51.316,s:'destroyed',t:'mil',icon:'✈️',name:'Mehrabad Air Base — Tehran',
-   status:'DESTROYED — military facilities',
-   detail:'Dual-use civilian/military airport in Tehran. Military ramp and hangars destroyed. Civilian terminal status unclear. All military aircraft dispersed or destroyed.',
-   strategic:'Eliminates Tehran-area air defence and strike aviation capacity.'},
+   status:'DESTROYED — Day 12 re-strike',
+   detail:'Dual-use civilian/military airport in Tehran. Military ramp and hangars destroyed in early strikes. Day 12: IDF re-struck hardened hangars, destroying 16 Quds Force aircraft. Tehran reports airport area devastated; civilian operations remain suspended.',
+   strategic:'Eliminates residual Tehran-area air capacity. Day 12 strike eliminates aircraft that had survived dispersal from earlier hits.'},
   {lat:27.219,lng:56.372,s:'operational',t:'mil',icon:'⚓',name:'Bandar Abbas Naval HQ — Strait of Hormuz',
    status:'OPERATIONAL — deliberately NOT struck',
    detail:'Main IRGC Navy and IRIN headquarters. Deliberately excluded from target list. Striking Bandar Abbas would likely trigger immediate Hormuz closure, halting ~22% of global oil trade.',
@@ -860,7 +875,18 @@ LAUNCHERS.forEach(l=>{
 //  EVENT LOG DATA (newest first)
 // ══════════════════════════════════════════════════
 const EVENTS=[
-  {date:'Mar 10',day:11,cls:'d11',today:true,
+  {date:'Mar 11',day:12,cls:'d12',today:true,
+   stats:[{c:'r',t:'~14 missiles'},{c:'p',t:'~40 drones'},{c:'b',t:'~2,000+ dead total'},{c:'o',t:'Oil: ~$85/bbl'},{c:'r',t:'Iran\'s most intense salvo'}],
+   entries:[
+    {icon:'🚀',html:`Iran launches what state media calls its <strong>"most intense operation since the beginning of the war"</strong> — the 37th wave of attacks — firing <strong>super-heavy Khoramshahr IRBMs</strong> in multi-layered barrages lasting more than three hours. Targets span <strong>Tel Aviv, Haifa, West Jerusalem, Erbil (Iraq)</strong>, and US bases in <strong>Manama, Bahrain</strong>. The Khoramshahr-4 ("Kheibar") carries a 1,500 kg warhead and has a range of 2,000 km — Iran's heaviest operational ballistic missile. IDF says it deployed Arrow-3 exo-atmospheric interceptors for the first time this conflict to engage the incoming IRBM threat.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/11/iran-war-what-is-happening-on-day-12-of-us-israel-attacks'},{n:'NBC News',u:'https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-israel-us-lebanon-tehran-oil-prices-hormuz-rcna262889'}]},
+    {icon:'🛢️',html:`A drone strike ignites a major fire at the <strong>Ruwais Industrial Complex</strong> in Abu Dhabi — the world's 4th-largest refinery, producing <strong>922,000 barrels/day</strong>. ADNOC halts full refinery operations as a precaution. UAE says <strong>26 drones were intercepted</strong> on Tuesday but <strong>nine fell inside UAE territory</strong>. The shutdown represents a ~1% hit to global refining capacity and pushes jet fuel prices to record highs. Abu Dhabi and Dubai international airports report temporary holding patterns but remain open.`,srcs:[{n:'NewsX',u:'https://www.newsx.com/world/israel-iran-us-conflict-war-live-uae-missiles-drones-dubai-airport-abu-dhabi-airport-ruwais-refinery-closed-saudi-arabia-gulf-zayed-international-airport-180750/'},{n:'NBC News',u:'https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-israel-us-lebanon-tehran-oil-prices-hormuz-rcna262889'}]},
+    {icon:'🚢',html:`Two commercial vessels are struck near the Strait of Hormuz: a Palau-flagged bulk carrier <em>Skylight</em> hit near Dubai and a Marshall Islands-flagged cargo ship <em>MKD VYOM</em> struck in the Strait itself. Lloyd's List confirms <strong>nine vessels attacked</strong> since conflict began. Shipping through Hormuz has slowed to near-standstill with <strong>~150 freight ships and oil tankers</strong> stalled offshore. Three Indian nationals among those killed; multiple nationalities among casualties from maritime strikes.`,srcs:[{n:'NBC News',u:'https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-israel-us-lebanon-tehran-oil-prices-hormuz-rcna262889'},{n:'Long War Journal',u:'https://www.longwarjournal.org/archives/2026/03/iranian-drone-and-missile-barrages-strike-arab-states-across-the-region-march-9-10-updates.php'}]},
+    {icon:'🏫',html:`The White House confirms the US military is investigating a strike on an <strong>Iranian girls' school</strong> in Tehran that killed approximately <strong>175 students</strong>. Emerging photographic evidence suggests a US-origin missile was responsible. Press Secretary says the President has been briefed and "will accept the findings of the investigation." Iran broadcasts footage of the aftermath; UN Special Rapporteur calls for an immediate independent inquiry. Global condemnation intensifies — Germany, France, and the UK issue formal statements of concern.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites'},{n:'Hengaw',u:'https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5'}]},
+    {icon:'🎯',html:`US and Israeli forces continue heavy strikes on Tehran — <strong>Mehrabad International Airport</strong> struck again overnight; IDF reports <strong>16 Quds Force aircraft destroyed</strong> in hardened hangars. Tehran says US and Israeli forces have now bombed <strong>nearly 10,000 sites</strong> since February 28, including more than 1,300 confirmed civilian casualties. Conflicting signals from Washington: Trump tells reporters the war will end <em>"very soon"</em>, while Hegseth states at a Pentagon briefing that strikes will continue until <em>"the enemy is totally and decisively defeated."</em>`,srcs:[{n:'Al Jazeera liveblog',u:'https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites'},{n:'CNN',u:'https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-10-26'}]},
+    {icon:'🛢️',html:`Oil prices swing wildly on contradictory war-end signals. Brent crude settles near <strong>~$85/barrel</strong> after Trump's "very soon" comment — down from the $119.50 peak — but analysts warn that markets remain highly volatile as long as Hormuz is contested. Saudi Arabia, UAE, Kuwait and Iraq have all cut production due to conflict disruption. The IEA stands ready to release 1.2 billion barrels of strategic reserves if needed. US gas prices remain elevated at ~$4.50/gallon national average.`,srcs:[{n:'Al Jazeera Economy',u:'https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war'},{n:'CNBC',u:'https://www.cnbc.com/2026/03/10/crude-oil-prices-today-iran-war.html'}]},
+    {icon:'💀',html:`Running casualty totals: Iran <strong>1,300+ confirmed civilian dead</strong> (Tehran); human rights org Hengaw estimates <strong>4,300+ killed including 390 civilians</strong> in first 10 days. Israel: <strong>14 civilians killed, 2,339 injured</strong>. US military: <strong>7 KIA, ~140 wounded</strong>. Lebanon: <strong>397+ dead</strong> from Israeli strikes. Combined confirmed total: <strong>~2,000+</strong> with real toll substantially higher by all independent estimates.`,srcs:[{n:'Hengaw',u:'https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5'},{n:'Al Jazeera tracker',u:'https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker'}]},
+   ]},
+  {date:'Mar 10',day:11,cls:'d11',today:false,
    stats:[{c:'r',t:'~10 missiles'},{c:'p',t:'~50 drones'},{c:'b',t:'1,638+ dead confirmed'},{c:'o',t:'Oil: ~$88/bbl'},{c:'r',t:'Most intense US strikes'}],
    entries:[
     {icon:'💣',html:`Defense Secretary Pete Hegseth announces Tuesday will be <strong>"the most intense day of US strikes"</strong> on Iran — "the most fighters, the most bombers, the most strikes, intelligence more refined and better than ever." B-2 Spirit stealth bombers, F-35s and cruise missiles conduct the campaign's heaviest single-day sortie tempo. CNN's team in Tehran reports walls of buildings shaking overnight; <strong>historic landmarks in Isfahan</strong> are damaged in strikes targeting adjacent IRGC logistics depots.`,srcs:[{n:'NBC News',u:'https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-oil-prices-trump-hormuz-israel-rcna262670'},{n:'PBS',u:'https://www.pbs.org/newshour/world/iranian-barrages-target-israel-and-gulf-countries-as-hegseth-warns-iran-of-most-intense-day-of-strikes'}]},
@@ -981,7 +1007,7 @@ const EVENTS=[
 
 // render event log
 const elogDiv=document.getElementById('elog');
-const dayColors={d1:'#c0392b',d2:'#c0392b',d3:'#e67e22',d4:'#e67e22',d5:'#f1c40f',d6:'#f1c40f',d7:'#27ae60',d8:'#27ae60',d9:'#27ae60',d10:'#27ae60',d11:'#27ae60'};
+const dayColors={d1:'#c0392b',d2:'#c0392b',d3:'#e67e22',d4:'#e67e22',d5:'#f1c40f',d6:'#f1c40f',d7:'#27ae60',d8:'#27ae60',d9:'#27ae60',d10:'#27ae60',d11:'#27ae60',d12:'#27ae60'};
 EVENTS.forEach(ev=>{
   const col=dayColors[ev.cls]||'#718096';
   let html=`<div class="eday"><div class="elabel" style="--dc:${col}">`;
@@ -1009,9 +1035,9 @@ document.querySelectorAll('.elabel').forEach((el,i)=>{
 // ══════════════════════════════════════════════════
 //  CHARTS
 // ══════════════════════════════════════════════════
-const lbl=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10'];
-const dL=[60,38,25,20,9,7,4,2,1,1,3],dM=[88,68,48,35,5,3,1,1,1,2,5],
-      dS=[40,35,25,20,7,5,2,1,1,1,2],dC=[10,7,4,3,1,0,0,0,0,0,0],dD=[700,480,370,360,120,110,70,40,24,20,50];
+const lbl=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11'];
+const dL=[60,38,25,20,9,7,4,2,1,1,3,5],dM=[88,68,48,35,5,3,1,1,1,2,5,7],
+      dS=[40,35,25,20,7,5,2,1,1,1,2,2],dC=[10,7,4,3,1,0,0,0,0,0,0,0],dD=[700,480,370,360,120,110,70,40,24,20,50,40];
 const ch1=new Chart(document.getElementById('dc'),{type:'bar',
   data:{labels:lbl,datasets:[
     {label:'Long-Range Ballistic',data:dL,backgroundColor:'rgba(192,57,43,.85)',yAxisID:'y',stack:'m',order:2},
@@ -1156,22 +1182,22 @@ function doRefresh(){
     if(numsEl)numsEl.textContent=`${f(newRem)} remaining / ${f(lnch.prewar)} pre-war`;
   });
 
-  // ── Daily launch chart — append new days when Days Active > 11 ──
-  const baseLabels=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10'];
-  const baseDL=[60,38,25,20,9,7,4,2,1,1,3],baseDM=[88,68,48,35,5,3,1,1,1,2,5];
-  const baseDSh=[40,35,25,20,7,5,2,1,1,1,2],baseDC=[10,7,4,3,1,0,0,0,0,0,0],baseDDr=[700,480,370,360,120,110,70,40,24,20,50];
-  // Reset to baseline 11-day data first
+  // ── Daily launch chart — append new days when Days Active > 12 ──
+  const baseLabels=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11'];
+  const baseDL=[60,38,25,20,9,7,4,2,1,1,3,5],baseDM=[88,68,48,35,5,3,1,1,1,2,5,7];
+  const baseDSh=[40,35,25,20,7,5,2,1,1,1,2,2],baseDC=[10,7,4,3,1,0,0,0,0,0,0,0],baseDDr=[700,480,370,360,120,110,70,40,24,20,50,40];
+  // Reset to baseline 12-day data first
   ch1.data.labels=[...baseLabels];
   ch1.data.datasets[0].data=[...baseDL];
   ch1.data.datasets[1].data=[...baseDM];
   ch1.data.datasets[2].data=[...baseDSh];
   ch1.data.datasets[3].data=[...baseDC];
   ch1.data.datasets[4].data=[...baseDDr];
-  // If days > 11, project additional days at declining rate (~60% per day)
-  if(dy>11){
+  // If days > 12, project additional days at declining rate (~60% per day)
+  if(dy>12){
     const decline=0.60;
-    let lL=baseDL[10],lM=baseDM[10],lSh=baseDSh[10],lC=baseDC[10],lDr=baseDDr[10];
-    for(let i=12;i<=dy;i++){
+    let lL=baseDL[11],lM=baseDM[11],lSh=baseDSh[11],lC=baseDC[11],lDr=baseDDr[11];
+    for(let i=13;i<=dy;i++){
       const dt=new Date(2026,1,28+(i-1)); // Feb=1, so Feb28+11=Mar11, etc.
       ch1.data.labels.push('Mar '+dt.getDate());
       lL=Math.max(0,Math.round(lL*decline));
