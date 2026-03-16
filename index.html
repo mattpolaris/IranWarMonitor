@@ -193,7 +193,7 @@
 <header>
   <div>
     <h1>🇮🇷 Iran Arsenal &amp; Conflict Dashboard</h1>
-    <p>Op. True Promise IV — Iranian Response to US-Israeli Strikes (Op. Epic Fury / Op. Roaring Lion) &nbsp;|&nbsp; Day 13 &nbsp;|&nbsp; March 12, 2026</p>
+    <p>Op. True Promise IV — Iranian Response to US-Israeli Strikes (Op. Epic Fury / Op. Roaring Lion) &nbsp;|&nbsp; Day 17 &nbsp;|&nbsp; March 16, 2026</p>
   </div>
   <div class="badge"><div class="dot"></div><span>LIVE CONFLICT</span></div>
 </header>
@@ -201,10 +201,10 @@
 <details id="upanel">
   <summary>⟳ &nbsp;Live Update — Edit Cumulative Figures &amp; Refresh</summary>
   <div class="pgrid">
-    <div class="pf"><label>Missiles Fired (total)</label><input id="im" type="number" value="595"></div>
-    <div class="pf"><label>Drones Launched (total)</label><input id="id" type="number" value="2414"></div>
-    <div class="pf"><label>Days Active</label><input id="idy" type="number" value="13"></div>
-    <div class="pf"><label>Launchers Destroyed</label><input id="il" type="number" value="328"></div>
+    <div class="pf"><label>Missiles Fired (total)</label><input id="im" type="number" value="645"></div>
+    <div class="pf"><label>Drones Launched (total)</label><input id="id" type="number" value="2579"></div>
+    <div class="pf"><label>Days Active</label><input id="idy" type="number" value="17"></div>
+    <div class="pf"><label>Launchers Destroyed</label><input id="il" type="number" value="345"></div>
     <div class="pf"><label>Targets Struck</label><input id="it" type="number" value="15"></div>
     <button id="btn-upd" onclick="doRefresh()">↻ Update</button>
   </div>
@@ -215,10 +215,10 @@
 
 <!-- KPI -->
 <div class="krow">
-  <div class="kpi r"><div class="klbl">Missiles Fired (Est.)</div><div class="kval" id="kvm">595</div><div class="ksub">of ~9,000 total missile-class stockpile</div></div>
-  <div class="kpi o"><div class="klbl">Drones Launched (Est.)</div><div class="kval" id="kvd">2,414</div><div class="ksub" id="kvds">of ~80,000 stockpile · 3.0% expended</div></div>
-  <div class="kpi y"><div class="klbl">Targets Struck</div><div class="kval" id="kvt">15+</div><div class="ksub">across 9 countries / territories</div></div>
-  <div class="kpi b"><div class="klbl">Days Active</div><div class="kval" id="kvdy">13</div><div class="ksub" id="kvdys">since Feb 28 · ~328 launchers destroyed</div></div>
+  <div class="kpi r"><div class="klbl">Missiles Fired (Est.)</div><div class="kval" id="kvm">645</div><div class="ksub">of ~9,000 total missile-class stockpile · Iran claims ~700</div></div>
+  <div class="kpi o"><div class="klbl">Drones Launched (Est.)</div><div class="kval" id="kvd">2,579</div><div class="ksub" id="kvds">of ~80,000 stockpile · Iran claims ~3,600</div></div>
+  <div class="kpi y"><div class="klbl">Targets Struck</div><div class="kval" id="kvt">15,000+</div><div class="ksub">US claims 15,000+ targets hit (1,000+/day)</div></div>
+  <div class="kpi b"><div class="klbl">Days Active</div><div class="kval" id="kvdy">17</div><div class="ksub" id="kvdys">since Feb 28 · ~345 launchers destroyed</div></div>
 </div>
 
 <!-- MAP + ARSENAL -->
@@ -417,14 +417,14 @@
     <div style="margin-top:7px;font-size:.62rem;color:var(--muted)">CENTCOM confirmed ~500 missiles + ~2,000 drones by Day 4. Missiles ↓~90% · Drones ↓~83% from Day-1 peak. Drones plotted on right axis (purple line).</div>
   </div>
   <div class="card">
-    <div class="ctitle">Total Launch Split — All 13 Days</div>
+    <div class="ctitle">Total Launch Split — All 17 Days</div>
     <div style="max-width:200px;margin:0 auto 8px"><canvas id="sc"></canvas></div>
-    <div class="sr"><span class="sl">Long-Range Ballistic</span><span style="color:#e74c3c;font-weight:600">179 &nbsp;(5.9%)</span></div>
-    <div class="sr"><span class="sl">Medium-Range Ballistic</span><span style="color:#f39c12;font-weight:600">269 &nbsp;(8.9%)</span></div>
-    <div class="sr"><span class="sl">Short-Range Missiles</span><span style="color:#f1c40f;font-weight:600">143 &nbsp;(4.7%)</span></div>
-    <div class="sr"><span class="sl">Drones (Shahed)</span><span style="color:#9b59b6;font-weight:600">2,414 &nbsp;(79.7%)</span></div>
+    <div class="sr"><span class="sl">Long-Range Ballistic</span><span style="color:#e74c3c;font-weight:600">195 &nbsp;(6.0%)</span></div>
+    <div class="sr"><span class="sl">Medium-Range Ballistic</span><span style="color:#f39c12;font-weight:600">293 &nbsp;(9.0%)</span></div>
+    <div class="sr"><span class="sl">Short-Range Missiles</span><span style="color:#f1c40f;font-weight:600">153 &nbsp;(4.7%)</span></div>
+    <div class="sr"><span class="sl">Drones (Shahed)</span><span style="color:#9b59b6;font-weight:600">2,579 &nbsp;(79.5%)</span></div>
     <div class="sr"><span class="sl">Cruise Missiles</span><span style="color:#1abc9c;font-weight:600">25 &nbsp;(0.8%)</span></div>
-    <div class="sr"><span class="sl" style="font-weight:700;color:var(--txt)">TOTAL LAUNCHED</span><span style="font-weight:700;color:#fff">3,030</span></div>
+    <div class="sr"><span class="sl" style="font-weight:700;color:var(--txt)">TOTAL LAUNCHED</span><span style="font-weight:700;color:#fff">3,245</span></div>
     <div style="margin-top:8px;padding:7px 9px;background:#0b0d12;border-radius:5px;border:1px solid var(--border);font-size:.66rem;color:var(--muted)">📍 ~40% → <strong style="color:var(--red)">Israel</strong> &nbsp;·&nbsp; ~60% → <strong style="color:var(--orange)">US Gulf-region bases</strong></div>
   </div>
   <div class="card">
@@ -458,25 +458,25 @@
     <tbody>
       <tr>
         <td><strong>Long-Range Ballistic</strong><br><span style="font-size:.62rem;color:var(--muted)">&gt;1,500 km · Khorramshahr, Ghadr-110</span></td>
-        <td>179</td><td>158</td><td><span class="ev-badge">21</span></td>
+        <td>195</td><td>172</td><td><span class="ev-badge">23</span></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:88.0%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">88.0%</span></div></td>
         <td><span class="sys-badge">Arrow 3</span><span class="sys-badge">THAAD</span></td>
       </tr>
       <tr>
         <td><strong>Medium-Range Ballistic</strong><br><span style="font-size:.62rem;color:var(--muted)">700–1,500 km · Emad, Haj Qassem</span></td>
-        <td>269</td><td>226</td><td><span class="ev-badge">43</span></td>
+        <td>293</td><td>246</td><td><span class="ev-badge">47</span></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:84.0%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">84.0%</span></div></td>
         <td><span class="sys-badge">Arrow 2</span><span class="sys-badge">David's Sling</span></td>
       </tr>
       <tr>
         <td><strong>Short-Range Missiles</strong><br><span style="font-size:.62rem;color:var(--muted)">&lt;700 km · Zolfagar, Fateh-110</span></td>
-        <td>143</td><td>111</td><td><span class="ev-badge">32</span></td>
-        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:77.6%;background:linear-gradient(90deg,#e67e22,#f39c12)"></div></div><span class="rate-num" style="color:var(--orange)">77.6%</span></div></td>
+        <td>153</td><td>119</td><td><span class="ev-badge">34</span></td>
+        <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:77.8%;background:linear-gradient(90deg,#e67e22,#f39c12)"></div></div><span class="rate-num" style="color:var(--orange)">77.8%</span></div></td>
         <td><span class="sys-badge">Iron Dome</span><span class="sys-badge">David's Sling</span></td>
       </tr>
       <tr>
         <td><strong>Shahed Drones</strong><br><span style="font-size:.62rem;color:var(--muted)">Subsonic OWA · ~$20k/unit</span></td>
-        <td>2,414</td><td>1,992</td><td><span class="ev-badge">422</span></td>
+        <td>2,579</td><td>2,128</td><td><span class="ev-badge">451</span></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:82.5%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71">82.5%</span></div></td>
         <td><span class="sys-badge">Iron Dome</span><span class="sys-badge">F-35 / jets</span><span class="sys-badge">THAAD</span></td>
       </tr>
@@ -487,15 +487,15 @@
         <td><span class="sys-badge">Patriot</span><span class="sys-badge">Arrow 2</span></td>
       </tr>
       <tr style="background:rgba(255,255,255,.018)">
-        <td><strong style="color:var(--txt)">TOTAL</strong></td><td><strong>3,030</strong></td><td><strong>2,509</strong></td>
-        <td><strong><span class="ev-badge">521</span></strong></td>
+        <td><strong style="color:var(--txt)">TOTAL</strong></td><td><strong>3,245</strong></td><td><strong>2,687</strong></td>
+        <td><strong><span class="ev-badge">558</span></strong></td>
         <td><div style="display:flex;align-items:center;gap:6px"><div class="irate-bar" style="flex:1"><div class="irate-fill" style="width:82.8%;background:linear-gradient(90deg,#27ae60,#2ecc71)"></div></div><span class="rate-num" style="color:#2ecc71;font-size:.78rem"><strong>82.8%</strong></span></div></td>
         <td><span style="font-size:.63rem;color:var(--muted)">Multi-layer · All systems</span></td>
       </tr>
     </tbody>
   </table>
   <div class="ib" style="margin-top:10px">
-    <p>Of ~521 projectiles that evaded interception, not all caused significant damage — many missed targets, malfunctioned, or were downed by EW/SHORAD systems not tracked here. Confirmed damage assessments remain incomplete and classified. Interception rates reflect IDF/CENTCOM claims — these are optimistic and should be treated as upper bounds.</p>
+    <p>Of ~558 projectiles that evaded interception, not all caused significant damage — many missed targets, malfunctioned, or were downed by EW/SHORAD systems not tracked here. Confirmed damage assessments remain incomplete and classified. Interception rates reflect IDF/CENTCOM claims — these are optimistic and should be treated as upper bounds.</p>
   </div>
 </div>
 
@@ -514,7 +514,7 @@
   Defence Security Asia · Critical Threats/AEI · CBC News · Carnegie Endowment · CFR · Wikipedia 2026 Iran War ·
   Tasnim News · CSIS · Lloyd's of London · House of Commons Library · NATO · Reuters · AP<br>
   <strong>⚠ DISCLAIMER:</strong> EST = intel estimates with significant uncertainty. CONF = confirmed official statements.
-  Intercept rates and stockpile figures carry classification-level uncertainty. All figures rounded. Compiled March 12, 2026.
+  Intercept rates and stockpile figures carry classification-level uncertainty. All figures rounded. Compiled March 16, 2026.
 </div>
 
 <script>
@@ -547,7 +547,7 @@ const ST=[
   // Israeli territory
   {lat:32.085,lng:34.781,t:'i',
    name:'Tel Aviv / Gush Dan Metro Area',
-   day:'Day 1–13 (ongoing)',
+   day:'Day 1–17 (ongoing)',
    munitions:'~132 ballistic missiles + ~934 Shahed drones across 12 days; Day 12 includes Khoramshahr-4 IRBM strikes',
    interception:'~88% intercepted by Iron Dome, Arrow 2/3 (incl. Arrow-3 exo-atm. Day 12), David\'s Sling',
    damage:'Damage confirmed in Holon, Bat Yam, Rishon LeZion. Day 12: Khoramshahr barrages; Arrow-3 deployed for first time this conflict for exo-atmospheric intercept of inbound IRBMs.',
@@ -598,7 +598,7 @@ const ST=[
    system:'Patriot PAC-3'},
   {lat:26.221,lng:50.592,t:'u',
    name:'NSA Bahrain — 5th Fleet HQ',
-   day:'Day 3–13 (ongoing)',
+   day:'Day 3–17 (ongoing)',
    munitions:'~30 missiles + ~100+ drones across multiple salvos; Day 12 included in 37th wave Khoramshahr salvo',
    interception:'~78% intercepted — some drones breached perimeter on Day 6',
    damage:'3 drones impacted naval perimeter on Day 6. Minor structural damage. Fleet dispersed to open water. Day 11: adjacent desalination facility struck. Day 12: targeted again as part of 3-hour Khoramshahr barrage.',
@@ -685,14 +685,22 @@ const ST=[
    interception:'Partially intercepted; at least one drone impacted the facility',
    damage:'Damage to pumping and distribution infrastructure. Plant provides ~40% of Bahrain\'s potable water. Emergency water rationing activated. UN condemns attack as potential war crime.',
    system:'Bahrain air defence (limited)'},
+  // ── Day 17 new target ──
+  {lat:32.563,lng:44.924,t:'u',
+   name:'Ain al-Asad Air Base, Iraq (re-targeted)',
+   day:'Day 15–17',
+   munitions:'Continued drone probing attacks as part of IRGC Navy + Army + Hezbollah joint offensive',
+   interception:'Partially intercepted; ongoing threat to US forces in western Iraq',
+   damage:'Ongoing personnel risk. US forces on heightened alert. Incoming drone fire reported multiple days.',
+   system:'Patriot · C-RAM'},
   // ── Day 8 new target ──
   {lat:25.253,lng:55.364,t:'d',
    name:'Dubai International Airport',
-   day:'Day 8',
-   munitions:'1 Shahed drone (confirmed terminal impact); 2nd drone struck Dubai Marina residential tower',
-   interception:'Drone NOT fully intercepted — slipped through in urban low-altitude approach corridor',
-   damage:'Impact on airport terminal area. Emirates suspended all departures for 90 minutes. One civilian killed by interceptor shrapnel falling onto Deira. Dubai Marina tower façade damaged by second drone.',
-   system:'UAE THAAD · Patriot (activated after breach)'},
+   day:'Day 8, 17',
+   munitions:'Day 8: 1 Shahed drone (confirmed terminal); Day 17: drone attack causing temporary flight disruption',
+   interception:'Day 8: slipped through urban approach; Day 17: partial intercept — flights held at altitude, diversions',
+   damage:'Day 8: terminal impact, Emirates 90-min halt, 1 civilian killed. Day 17: Dubai Airport operations disrupted; multiple inbound flights held; world\'s busiest hub affected.',
+   system:'UAE THAAD · Patriot'},
 ];
 
 const TC={i:'#c0392b',u:'#e67e22',d:'#f1c40f'};
@@ -793,9 +801,9 @@ const FAC=[
    detail:'Main IRGC Navy and IRIN headquarters. Deliberately excluded from target list. Striking Bandar Abbas would likely trigger immediate Hormuz closure, halting ~22% of global oil trade.',
    strategic:'Strategic restraint — preserving global oil flows. IRGC naval forces still active.'},
   {lat:29.256,lng:50.323,s:'damaged',t:'mil',icon:'🛢️',name:'Kharg Island — Main Oil Export Terminal',
-   status:'HEAVILY DAMAGED — Day 9 escalation',
-   detail:'Handles ~90% of Iran\'s oil exports. Initially held off target list to avoid global energy shock. Day 9 saw the first deliberate, large-scale strikes on oil infrastructure: loading platforms, storage tanks (est. 4M barrel capacity), and pipeline manifolds hit. Shipping berthing areas damaged. Output severely curtailed.',
-   strategic:'Directly attacks Iran\'s primary revenue source (~$50B/yr in oil exports). Brent crude at ~$93/bbl. Risk of global supply shock if strikes continue; Saudi/UAE pledged compensatory output increase.'},
+   status:'HEAVILY DAMAGED — Day 9 oil infra + Day 14 military strike',
+   detail:'Handles ~90% of Iran\'s oil exports. Day 9: first deliberate strikes on oil loading platforms, storage tanks (est. 4M barrel capacity), pipeline manifolds. Day 14: US strikes ~90 military targets on the island (army defenses, Joshen Sea Base, airport tower, helicopter hangars) — Trump deliberately spares remaining oil infrastructure but warns he will strike it if Iran attacks shipping. Trump posts he "totally obliterated every military target."',
+   strategic:'Day 14 military strike compounds pressure while preserving oil-market leverage. Brent crude at ~$100/bbl. Trump explicitly uses Kharg oil infrastructure as a deterrence tool. Iran FM threatens to strike US-tied energy infrastructure in retaliation.'},
   {lat:30.354,lng:48.284,s:'damaged',t:'mil',icon:'🛢️',name:'Abadan Refinery — Iran\'s Largest Crude Oil Refinery',
    status:'DAMAGED — Day 9 strikes',
    detail:'Iran\'s largest and oldest refinery, with ~300,000 bbl/day processing capacity. Struck on Day 9 as part of coordinated oil infrastructure campaign — the first time domestic refinery assets were deliberately targeted. Crude distillation units and storage tanks hit. Refinery output halted.',
@@ -804,6 +812,15 @@ const FAC=[
    status:'DAMAGED — Day 9 strikes',
    detail:'Major petrochemical complex and crude oil storage depot on the northern Persian Gulf coast. Struck on Day 9 alongside Kharg Island and Abadan as part of coordinated strikes on oil export infrastructure. Onshore storage depots and loading manifolds damaged. Linked pipeline from Ahvaz fields affected.',
    strategic:'Compounds pressure on Iranian oil export capacity. Combined with Kharg and Abadan strikes, significantly disrupts Iran\'s ability to monetise remaining crude production.'},
+  // ── Day 16 new strikes ──
+  {lat:34.799,lng:48.515,s:'destroyed',t:'mil',icon:'🏛️',name:'Hamadan — IRGC &amp; Basij Regional HQ',
+   status:'DESTROYED — Day 16 strikes',
+   detail:'US-Israeli strikes on Day 16 target several central IRGC and Basij headquarters in the Hamadan area of western Iran — the first deliberate strikes on Basij command infrastructure in the conflict. Basij is Iran\'s paramilitary force (~300,000 personnel) responsible for internal security and mobilizing irregular forces.',
+   strategic:'Dismantling Basij command reduces Iran\'s ability to mobilize irregular forces and enforce internal security. Signals escalation beyond regular military targets to internal security apparatus.'},
+  {lat:32.508,lng:51.861,s:'damaged',t:'mil',icon:'✈️',name:'Isfahan IRGC Air Base',
+   status:'DAMAGED — Days 14–16 strikes',
+   detail:'IRGC air assets at Isfahan struck multiple times across Days 14–16 as part of systematic campaign against remaining Iranian air power. Day 14: US-Israeli strike on adjacent industrial factory kills 15 workers. Day 15–16: IRGC airbase at Isfahan targeted directly. US claims 15,000+ total targets struck at this stage of the campaign.',
+   strategic:'Isfahan is Iran\'s aerospace and defense manufacturing hub. Strikes here target IRGC aviation, weapons production, and dual-use industrial capacity. City of historic and strategic significance.'},
   // ── Day 10 new strike ──
   {lat:35.580,lng:51.390,s:'destroyed',t:'mil',icon:'🚀',name:'IRGC Aerospace Force Underground Command Bunker',
    status:'DESTROYED — Day 10 · Hajizadeh killed',
@@ -883,7 +900,40 @@ LAUNCHERS.forEach(l=>{
 //  EVENT LOG DATA (newest first)
 // ══════════════════════════════════════════════════
 const EVENTS=[
-  {date:'Mar 12',day:13,cls:'d13',today:true,
+  {date:'Mar 16',day:17,cls:'d17',today:true,
+   stats:[{c:'r',t:'Iran: ~700M / ~3,600D claimed'},{c:'p',t:'Dubai airport hit'},{c:'b',t:'Lebanon: 886 dead, 1M+ displaced'},{c:'o',t:'Oil: ~$105/bbl'},{c:'r',t:'Allies reject Hormuz help'}],
+   entries:[
+    {icon:'🚀',html:`Iran claims it has fired approximately <strong>~700 missiles and ~3,600 drones</strong> at US and Israeli targets since the war began — its first comprehensive self-reported total. US/IDF estimates are substantially lower. <strong>Black smoke and large explosions</strong> are reported over Tehran early Monday as the Israeli military launches a new strike wave targeting critical infrastructure in the capital. Al Jazeera publishes a detailed map showing how 16 days of attacks have evolved across the region.`,srcs:[{n:'CNN',u:'https://www.cnn.com/2026/03/16/middleeast/us-israel-iran-middle-east-war-what-we-know-intl-hnk'},{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/16/map-shows-how-16-days-of-attacks-have-evolved-in-us-israel-war-on-iran'}]},
+    {icon:'✈️',html:`A <strong>drone strike disrupts Dubai International Airport</strong>, forcing temporary flight holds and causing at least one inbound aircraft to divert. Dubai Airport — the world's busiest international hub — issues emergency protocols. Several flights are held at altitude or rerouted for several hours before operations resume. The strike marks the second targeting of Dubai aviation infrastructure this conflict.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/16/drone-strike-disrupts-dubai-flights-as-iran-continues-gulf-attacks'},{n:'CNN',u:'https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-16-26'}]},
+    {icon:'🌊',html:`Trump <strong>criticizes allies who refused his Hormuz coalition request</strong>: <em>"We will remember."</em> He says he contacted approximately seven countries and received no firm commitments. European leaders formally reject involvement: Germany says it sees <em>"no role for NATO"</em> in the strait; Australia and Japan say they are not sending ships; the UK offers vague cooperation language without details. Iran's FM signals a narrow off-ramp: <em>"We don't ask for a ceasefire, but this war must end — in a way that our enemies never again think about repeating such attacks."</em>`,srcs:[{n:'NPR',u:'https://www.npr.org/2026/03/16/nx-s1-5749109/trump-threatens-nato-strait-hormuz-iran-war'},{n:'CNBC',u:'https://www.cnbc.com/2026/03/16/trump-demands-allies-secure-strait-of-hormuz-oil-iran.html'}]},
+    {icon:'🇱🇧',html:`Lebanon's death toll from Israeli strikes rises to <strong>886 killed</strong> with more than <strong>1 million displaced</strong> — the highest displacement in Lebanon's modern history. Israeli ground forces launch new operations in southern Lebanese towns; Hezbollah engages IDF at multiple border locations. Israel says it plans <strong>at least three more weeks of war</strong>. IDF carries out strikes on Hezbollah logistics in Dahiyeh and Bekaa Valley.`,srcs:[{n:'CNN',u:'https://www.cnn.com/2026/03/16/middleeast/us-israel-iran-middle-east-war-what-we-know-intl-hnk'},{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/16/drone-strike-disrupts-dubai-flights-as-iran-continues-gulf-attacks'}]},
+    {icon:'❓',html:`Al Jazeera analysis: <em>"US says it has destroyed Iran's missile capacity — how is Iran still shooting?"</em> Despite CENTCOM claiming 70% of Iranian launchers destroyed and 85% of air defenses neutralized, Iran continues launching salvos. Analysts cite <strong>mobile TEL dispersal, decoy launchers, pre-positioned forward caches</strong> and survivable road-mobile systems. Some experts believe the 70% figure counts damaged or suppressed launchers, not permanently destroyed ones. Iran's ability to continue operations in week three is itself a strategic statement.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/16/us-says-it-has-destroyed-iran-missile-capacity-how-is-iran-still-shooting'},{n:'Euronews',u:'https://www.euronews.com/2026/03/16/trump-says-he-demanded-about-seven-countries-to-join-coalition-to-police-irans-strait-of-h'}]},
+   ]},
+  {date:'Mar 15',day:16,cls:'d16',today:false,
+   stats:[{c:'r',t:'10 attack waves on Israel'},{c:'p',t:'IDF: 700+ missile targets struck'},{c:'b',t:'70% of Iranian launchers neutralized'},{c:'o',t:'Oil: ~$100/bbl'},{c:'r',t:'Hamadan + Isfahan'}],
+   entries:[
+    {icon:'🎯',html:`IDF announces it has struck <strong>700+ targets</strong> related to Iran's missile array — and claims <strong>70% of Iran's ballistic missile launchers neutralized</strong> and <strong>85%+ of Iran's radar/air defence network destroyed</strong>. Hegseth says the US has now hit more than <strong>15,000 "enemy targets"</strong> since the war began (1,000+/day). The IDF cautions it still has <em>"thousands of targets"</em> remaining and plans for at least three more weeks of strikes.`,srcs:[{n:'Alma Research',u:'https://israel-alma.org/daily-report-the-second-iran-war-march-15-2026-1800/'},{n:'Times of Israel',u:'https://www.timesofisrael.com/liveblog-march-15-2026/'}]},
+    {icon:'🚀',html:`Iran launches <strong>10 separate attack waves against Israel</strong> in a single day — the highest single-day wave count of the war. Five barrages target the <strong>Tel Aviv / Gush Dan metro area</strong>; five target <strong>southern Israel</strong>. Sirens blare across central and southern Israel throughout the day. Iron Dome, Arrow-2, and David's Sling fire intercepts continuously. IDF reports significant interceptor expenditure but no mass-casualty events.`,srcs:[{n:'Alma Research',u:'https://israel-alma.org/daily-report-the-second-iran-war-march-15-2026-1800/'},{n:'Al Jazeera',u:'https://www.aljazeera.com/news/liveblog/2026/3/15/iran-war-live-trump-urges-world-to-keep-hormuz-strait-open'}]},
+    {icon:'💥',html:`<strong>Hamadan, western Iran</strong>: US-Israeli strikes target several central IRGC and Basij headquarters — the first deliberate strikes on Basij command infrastructure. Separately, <strong>Isfahan</strong> sees another wave of strikes on IRGC air assets; 15 killed in a strike on an industrial factory in Isfahan's outskirts. Trump weighs striking Iran's oil export hub directly (per UN Ambassador Mike Waltz), as a potential leverage tool toward negotiations.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/14/us-israeli-strike-kills-15-at-isfahan-factory-iranian-media-says'},{n:'CNBC',u:'https://www.cnbc.com/2026/03/15/iran-war.html'}]},
+    {icon:'🕊️',html:`Iran's Foreign Minister Araghchi shifts tone slightly: <em>"We don't ask for a ceasefire, but this war must end — in a way that our enemies never again think about repeating such attacks."</em> The phrase "war must end" marks a departure from the previous absolute rejection of all talk of ending hostilities. Analysts note the statement as a potential opening. US President Trump counters by claiming Iran <em>"wants to make a deal"</em> — a claim Iran's foreign ministry denies.`,srcs:[{n:'Iran International',u:'https://www.iranintl.com/en/202603166219'},{n:'CNBC',u:'https://www.cnbc.com/2026/03/15/iran-war.html'}]},
+   ]},
+  {date:'Mar 14',day:15,cls:'d15',today:false,
+   stats:[{c:'r',t:'Trump demands 7 countries for Hormuz'},{c:'p',t:'USS Tripoli + Marines deployed'},{c:'b',t:'Iran: 1,444 killed / 18,551 injured'},{c:'o',t:'Oil: ~$100/bbl'},{c:'r',t:'No ceasefire talks'}],
+   entries:[
+    {icon:'🌊',html:`Trump calls on <strong>approximately seven countries</strong> to send warships to help keep the Strait of Hormuz open — naming China, France, Japan, South Korea and the UK. He claims to have received <em>"some positive response"</em> but no country publicly commits. European nations are cool to the idea; Japan and Australia indicate they are not planning to participate. Trump says: <em>"We've opened the strait before — we can do it again."</em>`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/14/trump-says-many-countries-will-send-warships-to-hormuz-amid-iran-blockade'},{n:'Fortune',u:'https://fortune.com/2026/03/15/iran-some-countries-access-strait-of-hormuz-trump-warships-no-promises/'}]},
+    {icon:'⚓',html:`Defense Secretary Hegseth orders the <strong>USS Tripoli</strong> (amphibious assault ship) and its Marine Expeditionary Unit to the Middle East — the first <strong>ground-capable US amphibious force</strong> positioned for the conflict. The MEU can conduct shore raids and ground operations if ordered. Its deployment signals contingency planning for potential Hormuz seizure operations or other kinetic action beyond airstrikes. The move adds to an already massive US naval presence in the region (two carrier strike groups, Arleigh Burke destroyers, submarines).`,srcs:[{n:'Axios',u:'https://www.axios.com/2026/03/14/trump-iran-war-ships-strait-hormuz'},{n:'CNN',u:'https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-14-26'}]},
+    {icon:'📊',html:`IDF says it still has <strong>"thousands of targets"</strong> remaining and plans for at least three more weeks of strikes. At the two-week mark, Iran's Health Ministry confirms <strong>1,444 killed and 18,551 injured</strong>. Hengaw Organization for Human Rights revises its estimate upward to <strong>4,400+ Iranian military forces killed</strong>. NPR publishes a two-week retrospective: two weeks of war have cost the US an estimated $2B+ in ordnance, killed 13 American service members, and sent US gas prices to a national average of $4.50/gallon.`,srcs:[{n:'NPR',u:'https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths'},{n:'Times of Israel',u:'https://www.timesofisrael.com/liveblog-march-15-2026/'}]},
+    {icon:'🕊️',html:`Iran's Foreign Minister Araghchi tells NPR: <em>"No, we never asked for a ceasefire, and we have never asked even for negotiation. We are ready to defend ourselves as long as it takes."</em> This directly contradicts Trump's claim that Iran had asked for a deal. Omani back-channel contacts are confirmed to exist but no substantive talks are underway. Lebanese President Aoun's ceasefire proposal remains unanswered by Israel or the US.`,srcs:[{n:'NPR',u:'https://www.npr.org/2026/03/15/nx-s1-5748472/us-military-six-killed-iran-war'},{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/14/iran-continues-intensified-attacks-across-gulf-in-us-israel-war-fallout'}]},
+   ]},
+  {date:'Mar 13',day:14,cls:'d14',today:false,
+   stats:[{c:'r',t:'Kharg Island military struck'},{c:'p',t:'90 targets, oil spared'},{c:'b',t:'Isfahan factory: 15 killed'},{c:'o',t:'Oil: ~$100/bbl'},{c:'r',t:'Iran threatens energy retaliation'}],
+   entries:[
+    {icon:'🏝️',html:`US forces strike <strong>Kharg Island</strong> — Iran's main oil export hub (~90% of crude exports) — hitting approximately <strong>90 military targets</strong>: army defences, the Joshen Sea Base, airport control tower, and helicopter hangars. Trump posts that he deliberately chose <em>"NOT to wipe out the Oil Infrastructure on the Island — for reasons of decency"</em> — but warns he will do so if Iran continues attacking shipping. More than 15 explosions reported; thick smoke rising. The strike is the most significant single US action against Iranian economic infrastructure to date.`,srcs:[{n:'CNN',u:'https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-13-26'},{n:'Al Jazeera liveblog',u:'https://www.aljazeera.com/amp/news/liveblog/2026/3/14/iran-war-live-pentagon-vows-to-ramp-up-us-military-campaign-against-iran'}]},
+    {icon:'🛢️',html:`Iran's Foreign Minister vows retaliation: Iran's armed forces will <strong>"strike any energy infrastructure tied to American companies in the region."</strong> Iran separately threatens US <em>"hideouts"</em> in the UAE. Saudi Arabia intercepts more than two dozen drones fired from the Tehran direction. CENTCOM confirms the US has now hit more than <strong>5,000+ targets in Iran</strong> since Day 1. The Kharg Island strike triggers the biggest single-day spike in insurance premiums for Gulf-region energy assets since 2019.`,srcs:[{n:'France 24',u:'https://www.france24.com/en/middle-east/20260314-middle-east-war-live-iran-threatens-retaliation-as-trump-says-us-obliterated-targets-on-kharg-island'},{n:'Euronews',u:'https://www.euronews.com/2026/03/14/trump-says-us-has-totally-obliterated-military-targets-on-irans-kharg-island'}]},
+    {icon:'🏭',html:`A US-Israeli strike on an <strong>industrial factory in Isfahan</strong> kills at least <strong>15 workers</strong>, according to Iranian state media. Workers were inside a heating and cooling equipment plant when struck. Iran says the factory had no military connection; US/IDF do not comment specifically. At the two-week mark, Hegseth states the US has hit more than <strong>15,000 "enemy targets"</strong> — averaging more than 1,000 strikes per day since the war began.`,srcs:[{n:'Al Jazeera',u:'https://www.aljazeera.com/news/2026/3/14/us-israeli-strike-kills-15-at-isfahan-factory-iranian-media-says'},{n:'CNN',u:'https://www.cnn.com/2026/03/14/politics/trump-iran-attack-decision-fallout'}]},
+    {icon:'👤',html:`Trump tells reporters he is hearing that Iran's new Supreme Leader Mojtaba Khamenei may <em>"not be alive"</em> — fuelling speculation about his status. Iran immediately publishes video of Mojtaba addressing IRGC commanders, denying the claims. Intelligence analysts note Iran has strong motivation to project leadership continuity. The brief media frenzy highlights how much uncertainty surrounds Iran's true command status after two weeks of sustained decapitation strikes on leadership infrastructure.`,srcs:[{n:'Yahoo News',u:'https://www.yahoo.com/news/world/live/iran-war-live-updates-6-us-service-members-killed-in-military-plane-crash-thousands-of-marines-reportedly-being-deployed-to-middle-east-142632203.html'},{n:'CNN',u:'https://www.cnn.com/2026/03/14/politics/trump-iran-attack-decision-fallout'}]},
+   ]},
+  {date:'Mar 12',day:13,cls:'d13',today:false,
    stats:[{c:'r',t:'~11 missiles'},{c:'p',t:'~30 drones'},{c:'b',t:'~2,100+ dead total'},{c:'o',t:'Oil: ~$100/bbl'},{c:'r',t:'6 US killed in crash'}],
    entries:[
     {icon:'✈️',html:`Six US crew members die when a <strong>KC-135 Stratotanker refueling aircraft crashes over western Iraq</strong>. Pentagon says the cause was neither hostile nor friendly fire; investigation is ongoing. An Iranian proxy group claims responsibility. The crash brings US military deaths to <strong>13 total</strong> (7 from enemy fire, 6 from the crash). The KC-135 was supporting combat operations over Iran — the loss forces a temporary reduction in sortie tempo as other tankers are repositioned.`,srcs:[{n:'CBS News',u:'https://www.cbsnews.com/live-updates/iran-war-kc-135-plane-crash-iraq-us-deaths-strait-of-hormuz-no-end-in-sight/'},{n:'Euronews',u:'https://www.euronews.com/2026/03/13/saudi-arabia-intercept-over-two-dozen-drones-fired-from-tehran-as-war-in-iran-nears-third-'}]},
@@ -1025,7 +1075,7 @@ const EVENTS=[
 
 // render event log
 const elogDiv=document.getElementById('elog');
-const dayColors={d1:'#c0392b',d2:'#c0392b',d3:'#e67e22',d4:'#e67e22',d5:'#f1c40f',d6:'#f1c40f',d7:'#27ae60',d8:'#27ae60',d9:'#27ae60',d10:'#27ae60',d11:'#27ae60',d12:'#27ae60',d13:'#27ae60'};
+const dayColors={d1:'#c0392b',d2:'#c0392b',d3:'#e67e22',d4:'#e67e22',d5:'#f1c40f',d6:'#f1c40f',d7:'#27ae60',d8:'#27ae60',d9:'#27ae60',d10:'#27ae60',d11:'#27ae60',d12:'#27ae60',d13:'#27ae60',d14:'#27ae60',d15:'#27ae60',d16:'#27ae60',d17:'#27ae60'};
 EVENTS.forEach(ev=>{
   const col=dayColors[ev.cls]||'#718096';
   let html=`<div class="eday"><div class="elabel" style="--dc:${col}">`;
@@ -1053,9 +1103,9 @@ document.querySelectorAll('.elabel').forEach((el,i)=>{
 // ══════════════════════════════════════════════════
 //  CHARTS
 // ══════════════════════════════════════════════════
-const lbl=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11','Mar 12'];
-const dL=[60,38,25,20,9,7,4,2,1,1,3,5,4],dM=[88,68,48,35,5,3,1,1,1,2,5,7,5],
-      dS=[40,35,25,20,7,5,2,1,1,1,2,2,2],dC=[10,7,4,3,1,0,0,0,0,0,0,0,0],dD=[700,480,370,360,120,110,70,40,24,20,50,40,30];
+const lbl=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11','Mar 12','Mar 13','Mar 14','Mar 15','Mar 16'];
+const dL=[60,38,25,20,9,7,4,2,1,1,3,5,4,4,3,6,3],dM=[88,68,48,35,5,3,1,1,1,2,5,7,5,5,4,10,5],
+      dS=[40,35,25,20,7,5,2,1,1,1,2,2,2,2,2,4,2],dC=[10,7,4,3,1,0,0,0,0,0,0,0,0,0,0,0,0],dD=[700,480,370,360,120,110,70,40,24,20,50,40,30,35,30,60,40];
 const ch1=new Chart(document.getElementById('dc'),{type:'bar',
   data:{labels:lbl,datasets:[
     {label:'Long-Range Ballistic',data:dL,backgroundColor:'rgba(192,57,43,.85)',yAxisID:'y',stack:'m',order:2},
@@ -1200,22 +1250,22 @@ function doRefresh(){
     if(numsEl)numsEl.textContent=`${f(newRem)} remaining / ${f(lnch.prewar)} pre-war`;
   });
 
-  // ── Daily launch chart — append new days when Days Active > 13 ──
-  const baseLabels=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11','Mar 12'];
-  const baseDL=[60,38,25,20,9,7,4,2,1,1,3,5,4],baseDM=[88,68,48,35,5,3,1,1,1,2,5,7,5];
-  const baseDSh=[40,35,25,20,7,5,2,1,1,1,2,2,2],baseDC=[10,7,4,3,1,0,0,0,0,0,0,0,0],baseDDr=[700,480,370,360,120,110,70,40,24,20,50,40,30];
-  // Reset to baseline 13-day data first
+  // ── Daily launch chart — append new days when Days Active > 17 ──
+  const baseLabels=['Feb 28','Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6','Mar 7','Mar 8','Mar 9','Mar 10','Mar 11','Mar 12','Mar 13','Mar 14','Mar 15','Mar 16'];
+  const baseDL=[60,38,25,20,9,7,4,2,1,1,3,5,4,4,3,6,3],baseDM=[88,68,48,35,5,3,1,1,1,2,5,7,5,5,4,10,5];
+  const baseDSh=[40,35,25,20,7,5,2,1,1,1,2,2,2,2,2,4,2],baseDC=[10,7,4,3,1,0,0,0,0,0,0,0,0,0,0,0,0],baseDDr=[700,480,370,360,120,110,70,40,24,20,50,40,30,35,30,60,40];
+  // Reset to baseline 17-day data first
   ch1.data.labels=[...baseLabels];
   ch1.data.datasets[0].data=[...baseDL];
   ch1.data.datasets[1].data=[...baseDM];
   ch1.data.datasets[2].data=[...baseDSh];
   ch1.data.datasets[3].data=[...baseDC];
   ch1.data.datasets[4].data=[...baseDDr];
-  // If days > 13, project additional days at declining rate (~60% per day)
-  if(dy>13){
+  // If days > 17, project additional days at declining rate (~60% per day)
+  if(dy>17){
     const decline=0.60;
-    let lL=baseDL[12],lM=baseDM[12],lSh=baseDSh[12],lC=baseDC[12],lDr=baseDDr[12];
-    for(let i=14;i<=dy;i++){
+    let lL=baseDL[16],lM=baseDM[16],lSh=baseDSh[16],lC=baseDC[16],lDr=baseDDr[16];
+    for(let i=18;i<=dy;i++){
       const dt=new Date(2026,1,28+(i-1)); // Feb=1, so Feb28+11=Mar11, etc.
       ch1.data.labels.push('Mar '+dt.getDate());
       lL=Math.max(0,Math.round(lL*decline));
